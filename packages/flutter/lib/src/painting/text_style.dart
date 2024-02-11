@@ -503,10 +503,10 @@ class TextStyle with Diagnosticable {
     String? package,
     this.overflow,
   }) : fontFamily = package == null ? fontFamily : 'packages/$package/$fontFamily',
-       _fontFamilyFallback = fontFamilyFallback,
-       _package = package,
-       assert(color == null || foreground == null, _kColorForegroundWarning),
-       assert(backgroundColor == null || background == null, _kColorBackgroundWarning);
+      _fontFamilyFallback = fontFamilyFallback,
+      _package = package,
+      assert(color == null || foreground == null, _kColorForegroundWarning),
+      assert(backgroundColor == null || background == null, _kColorBackgroundWarning);
 
 
   /// Whether null values in this [TextStyle] can be replaced with their value
